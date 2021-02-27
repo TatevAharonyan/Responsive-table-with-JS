@@ -1,0 +1,95 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color:grey;
+}
+
+#conteiner {
+    width:inherit;
+    height: inherit;
+}
+
+#input {
+    width: 90%;
+    min-width: 640px;
+    height: auto;
+    text-align:center;
+    margin: .5rem auto;
+    padding: 1rem 1.5rem;
+    display: block;
+    
+}
+
+#input > div {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin: .5rem auto;
+    text-align: left;
+    align-items: center;
+}
+
+h2 {
+    /* float: left; */
+    display:inline-block;
+    width: 10vmax;
+    color: white;
+    font-size: 1.5vmax;
+}
+input {
+    width:10vmax;
+    height:2.5vmax;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1vmax;
+    border-radius: 15px;
+}
+
+#table {
+    width: 100%;
+    height: 350px ;
+    text-align:center;
+    overflow-y:auto;
+}
+p { 
+    color: #111415;
+    font-family: Arial;
+    font-size: 1vmax;
+    display:inline-block;
+}
+input:focus {
+    outline: none;
+}
+table {
+    width: 80%;
+    margin: 5rem auto;
+    height:80px;
+    border: 2px solid white;
+    border-collapse: collapse;
+    background-color: grey;
+    table-layout: fixed;
+    
+}
+tr {
+    border: 2px solid white;
+    height: 47px;
+    display: table-row;
+}
+td{
+    border: 2px solid white;
+    display: table-cell;
+}
+
+@media screen and (max-height: 120px ){
+    table{
+        overflow-y:auto;
+    }
+}
